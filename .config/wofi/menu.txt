@@ -1,0 +1,11 @@
+# General programs
+Firefox (Web Browser)|firefox 					# Web Browser
+Alacritty (Terminal Emulator)|alacritty|alacritty 		# Terminal
+Thunar (File Manager)|thunar 					# File manager
+VLC Media Player|vlc 						# Media player
+GEdit (Text Editor)|gedit 					# Text editor
+
+# Settings / System
+Take screenshot|grim|sleep 0.5; grim - | wl-copy 		# Copies screenshot to clipboard
+Audio settings|pavucontrol 					# PulseAudio settings (works with pipewire-pulse, use that)
+Run|wofi --show run -np "Search commands" -O alphabetical 	# Show all commands

@@ -1,0 +1,11 @@
+[Unit]
+Description=Set discord status to idle "afk"
+After=network-online.target
+Wants=network-online.target
+
+[Service]
+Type=oneshot
+RemainAfterExit=true
+ExecStart=python3 ~/.local/bin/setdiscordstatus.py -iSd ~/.discordstatus.json -s idle -t afk
+ExecStop=python3 ~/.local/bin/setdiscordstatus.py -iRr ~/.discordstatus.json
+
