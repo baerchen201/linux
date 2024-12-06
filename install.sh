@@ -21,6 +21,9 @@ echo -e "\n == Copying files, please wait... =="
 shopt -s dotglob extglob
 cp $(dirname $0)/!(.git|.gitignore|pacman.txt|install.sh) ~ -r
 
+echo -e "\n == Rebuilding font cache, please wait... =="
+fc-cache -fv
+
 echo -e "\n == Installation successful =="
 read -sn 1 -p "Press any key to exit..."
 echo
